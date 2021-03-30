@@ -95,3 +95,7 @@ func generatePassword(raw string) (string, error) {
 	}
 	return string(hash), nil
 }
+
+func (u *User) GetTableName() string {
+	return "user"
+}

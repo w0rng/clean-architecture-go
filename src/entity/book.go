@@ -39,3 +39,7 @@ func (b *Book) Validate() error {
 	}
 	return nil
 }
+
+func (b *Book) GetTableName() string {
+	return "book"
+}
